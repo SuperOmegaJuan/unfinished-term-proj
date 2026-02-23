@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+
+<!-- TOP HEADER -->
+<div class="header-top">
+
+  <div></div>
+
+  <div class="logo">
+    Mah Pen Med.
+  </div>
+
+
+  <div class="header-icons">
+
+<input class="search" placeholder="Search menswear">
+
+<% if (!user) { %> 
+    <button class="user-icon">Login</button> 
+    <% } else { %> 
+        <span> <%= user.username %></span> 
+    <a href="/logout" class="user-icon logout-button">Logout</a> 
+<% } %>
+
+<span>❤</span>
+<span>🛒</span>
+
+</div>
+
+</div>
+
+<!-- Black moving bar -->
+  <div class="announcement-bar">
+  <div class="announcement-track">
+    <span>- Free shipping over $100 -</span>
+    <span>- New Arrivals Just Dropped -</span>
+    <span>- Summer Sale Up To 40% Off -</span>
+
+    <span>- Free shipping over $100 -</span>
+    <span>- New Arrivals Just Dropped -</span>
+    <span>- Summer Sale Up To 40% Off -</span>
+
+     <span>- Free shipping over $100 -</span>
+    <span>- New Arrivals Just Dropped -</span>
+    <span>- Summer Sale Up To 40% Off -</span>
+
+     <span>- Free shipping over $100 -</span>
+    <span>- New Arrivals Just Dropped -</span>
+    <span>- Summer Sale Up To 40% Off -</span>
+  </div>
+</div>
+
+
+<!-- NAV BAR -->
+<nav class="nav-bar">
+
+<div class="nav-item">
+New In
+<div class="dropdown">
+  <div class="drop-links">
+    <h4>ALL NEW</h4>
+    <p>TextHolder Please fill this</p>
+    <p>TextHolder Please fill this</p>
+  </div>
+
+  <div class="drop-links">
+    <h4>CATEGORIES</h4>
+    <p>TextHolder Please fill this</p>
+    <p>TextHolder Please fill this</p>
+  </div>
+
+  <div class="drop-images">
+    <div>
+      <img src="/images/drop1.jpg">
+      <p>TextHolder Please fill this</p>
+    </div>
+
+    <div>
+      <img src="/images/drop2.jpg">
+      <p>TextHolder Please fill this</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="nav-item">
+Clothing
+<div class="dropdown">
+  <div class="drop-links">
+    <h4>Men</h4>
+    <p>TextHolder Please fill this</p>
+  </div>
+
+  <div class="drop-links">
+    <h4>Women</h4>
+    <p>TextHolder Please fill this</p>
+  </div>
+
+  <div class="drop-images">
+    <div>
+      <img src="/images/drop1.jpg">
+      <p>TextHolder Please fill this</p>
+    </div>
+
+    <div>
+      <img src="/images/drop2.jpg">
+      <p>TextHolder Please fill this</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="nav-item"> 
+    Footwear 
+    <div class="dropdown"> 
+        <div class="drop-links"> 
+            <h4>Sneakers</h4> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+        </div> <div class="drop-links"> 
+            <h4>Boots</h4> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+        </div> <div class="drop-images"> <div> 
+            <img src="/images/drop1.jpg"> 
+            <p>TextHolder Please fill this</p> 
+        </div> <div> <img src="/images/drop2.jpg"> 
+            <p>TextHolder Please fill this</p> 
+        </div> 
+    </div> 
+</div> 
+</div>
+
+<div class="nav-item">
+Accessories 
+<div class="dropdown"> 
+    <div class="drop-links"> 
+        <h4>Men</h4> 
+        <p>TextHolder Please fill this</p> 
+        <p>TextHolder Please fill this</p> 
+        <p>TextHolder Please fill this</p> 
+    </div> <div class="drop-links"> <h4>Woman</h4> 
+        <p>TextHolder Please fill this</p> 
+        <p>TextHolder Please fill this</p> 
+        <p>TextHolder Please fill this</p> 
+    </div> <div class="drop-images"> <div> 
+        <img src="/images/drop1.jpg">
+         <p>TextHolder Please fill this</p> 
+        </div> 
+        <div> 
+            <img src="/images/drop2.jpg"> 
+            <p>TextHolder Please fill this</p>
+         </div> 
+        </div> 
+    </div> 
+</div> 
+<div class="nav-item"> Launches
+     <div class="dropdown launches"> 
+        <div class="drop-links"> 
+            <h4>Upcoming</h4> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+            <p>TextHolder Please fill this</p> 
+        </div> <div class="drop-images"> 
+            <div> <img src="/images/drop1.jpg"> 
+                <p>TextHolder Please fill this</p> 
+            </div> <div> <img src="/images/drop2.jpg"> 
+                <p>TextHolder Please fill this</p> 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+<div class="nav-item"> 
+    <div class="nav-item sale">Sale</div>
+     <div class="dropdown sale"> 
+        <div class="drop-links"> 
+            <h4>ENDING SOON</h4> 
+            <p>TextHolder Please fill this</p>
+             <p>TextHolder Please fill this</p> 
+             <p>TextHolder Please fill this</p> 
+            </div> <div class="drop-links"> 
+                <h4>Upcoming Sales</h4> 
+                <p>TextHolder Please fill this</p> 
+                <p>TextHolder Please fill this</p> 
+                <p>TextHolder Please fill this</p> 
+            </div>
+     </div>
+</div>
+</nav>
+
+
+<%- include("loginModal") %>
+
+</header>
+<script src="/js/login.js"></script>
+</body>
+</html>
