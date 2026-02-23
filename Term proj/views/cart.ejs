@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+<section class="product-section">
+
+<h2>Your Cart</h2>
+
+<% if(cart.length === 0){ %>
+
+<p>Your cart is empty.</p>
+
+<% } else { %>
+
+<div class="product-track">
+
+<% cart.forEach(item => { %>
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="<%= item.image %>">
+</div>
+
+<h3><%= item.name %></h3>
+<p>$<%= item.price %></p>
+
+</div>
+
+<% }) %>
+
+</div>
+
+<% } %>
+
+</section>
+
+<%- include("partials/footer") %>
